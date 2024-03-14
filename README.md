@@ -4,6 +4,10 @@ Docker for Android SDK 34 with preinstalled build tools and emulator image
 
 > Edit from [mindrunner/docker-android-sdk](https://github.com/mindrunner/docker-android-sdk)
 
+**Build image**
+
+`make dc-build`
+
 **Installed Packages**
 
 ```bash
