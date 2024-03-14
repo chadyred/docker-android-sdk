@@ -1,0 +1,13 @@
+version: '3'
+services:
+  android-sdk-emulator:
+    build: .
+
+  android-sdk-emulator-interactive:
+    extends: 'android-sdk-emulator'
+    devices: 
+       - "/dev/kvm:/dev/kvm"
+
+  android-sdk-emulator-interactive-network-on-host:
+    extends: 'android-sdk-emulator-interactive'
+    network_mode: host
